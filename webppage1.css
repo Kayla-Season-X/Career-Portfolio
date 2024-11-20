@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: black;
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+}
+.article1{
+    background-image: url(1.gif);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 100em;
+    height: 50em;
+}
+header{
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+
+}
+.nav1{
+    display: flex;
+    font-size: 1em;
+}
+.nav1 h2{
+    margin: 1em;
+}
+.nav2 ul{
+    display: flex;
+    list-style-type: none;
+    padding:1em;
+}
+.nav2 li{
+    margin:1em;
+}
+.nav2 a{
+    color: white;
+    text-decoration: none;
+}
+.nav2 a:hover{
+    color:rgb(149, 199, 255);
+    border-bottom: royalblue solid 0.1em;
+}
+.section{
+    margin:-8em auto 0;
+    background-color: white;
+    text-align: center;
+    width:45em;
+    height:18em;
+    border-radius: 1em;
+    font-size: large;
+}
+.section h1{
+    padding-top:1em;
+    margin: 0.5em;
+}
+.section p{
+    padding:3em;
+    font-style: italic;
+}
+.h1{
+    color:white;
+    text-align: center;
+    margin: 1em;
+    margin-top: 6em;
+    font-size: 5em;
+}
+.section2{
+    display: flex;
+    justify-content: center;
+}
+.section-content img{
+    width:20em;
+    height:45em;
+    margin: 0.5em;
+}
+.about{
+    border: 1em solid royalblue;
+    background-color:rgb(149, 199, 255);
+    border-radius: 1em;
+    margin:7em;
+    padding-top:0.1em;
+    padding-bottom: 0.1em;
+}
+.about-content{
+    display:flex;
+    padding:1em;
+    margin: 1em;
+    border: 1em solid white;
+    border-radius: 1em;
+    background-color: black;
+    color:white;
+}
+.about-image img{
+    width: 40em;
+    height: 40em;
+}
+.about-item{
+    font-size: larger;
+    margin:3.5em;
+}
+.h1-1{
+    margin:2em;
+    font-size: 5em;
+    color:white;
+    text-align: center;
+}
