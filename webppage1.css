@@ -12,8 +12,8 @@ body{
     background-image: url(1.gif);
     background-repeat: no-repeat;
     background-position:center;
-    background-size: 100em;
-    height: 50em;
+    background-size: cover;
+    height: 95vh;
 }
 header{
     color: white;
@@ -26,10 +26,18 @@ nav{
 }
 .nav1{
     display: flex;
-    font-size: 1em;
+    font-size: 1.5em;
+}
+.nav1 img{
+    width: 14vw;
+    border-radius: 50em;
+    margin:0.75em;
+    margin-left:1em;
+    height: 25vh;
+    opacity: 20%;
 }
 .nav1 h2{
-    margin: 1em;
+    margin-top:1em;
 }
 .nav2 ul{
     display: flex;
@@ -37,15 +45,20 @@ nav{
     padding:1em;
 }
 .nav2 li{
-    margin:1em;
+    margin:0.5em;
+    margin-top:1em;
+    font-size: 1.25em;
 }
 .nav2 a{
     color: white;
     text-decoration: none;
 }
 .nav2 a:hover{
-    color:rgb(149, 199, 255);
-    border-bottom: royalblue solid 0.1em;
+    color:rgb(12, 0, 88);
+    background-color:rgb(149, 199, 255);
+    text-decoration: underline royalblue;
+    padding: 0.25em;
+    border-radius: 10em;
 }
 .section{
     margin:-8em auto 0;
@@ -68,12 +81,14 @@ nav{
     color:white;
     text-align: center;
     margin: 1em;
-    margin-top: 6em;
+    margin-top: 4em;
     font-size: 5em;
 }
 .section2{
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .section-content img{
     width:20em;
@@ -84,13 +99,12 @@ nav{
     border: 1em solid royalblue;
     background-color:rgb(149, 199, 255);
     border-radius: 1em;
-    margin:7em;
+    margin:8vw;
     padding-top:0.1em;
     padding-bottom: 0.1em;
 }
 .about-content{
     display:flex;
-    padding:1em;
     margin: 1em;
     border: 1em solid white;
     border-radius: 1em;
@@ -98,8 +112,8 @@ nav{
     color:white;
 }
 .about-image img{
-    width: 40em;
-    height: 40em;
+    width: 44vw;
+    height: 98vh;
 }
 .about-item{
     font-size: larger;
@@ -110,4 +124,150 @@ nav{
     font-size: 5em;
     color:white;
     text-align: center;
+}
+.h1-2{
+    text-align: center;
+    color:white;
+    font-size: 5em;
+}
+footer{
+    border-top: royalblue 1em solid;
+    border-radius: 1em;
+    display: flex;
+    color:white;
+    margin:1.5em;
+}
+.footer2 img{
+    width:35vw;
+    margin-top:1.5em;
+    border-radius:8em;
+    height:100vh;
+}
+.footer1{
+    display: flex;
+    font-size: larger;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footer-links{
+    margin:3em;
+    margin-top: 3em;
+}
+.footer1 h2{
+    font-size: 2em;
+}
+.footer1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+.footer1 a:hover{
+    color:rgb(12, 0, 88);
+    background-color:rgb(149, 199, 255);
+    text-decoration: underline royalblue;
+    padding: 0.25em;
+    border-radius: 10em;
+}
+.footer1 ul{
+    list-style-type: none;
+}
+.social h2{
+    margin-top: 0.5em;
+    text-align: center;
+    font-size: 4.5em;
+}
+.social{
+    text-align: center;
+}
+.social img{
+    border-radius: 50em;
+    width: 11vw;
+    height: 22vh;
+    margin: 0.5em;
+    margin-bottom: 3em;
+}
+@media (max-width:1300px){
+    .about-item h2{
+        word-wrap: break-word;
+    }
+    .footer1{
+        display:block;
+        text-align: center;
+    }
+    .about-content{
+        flex-direction: column;
+        text-align: center;
+        margin:0;
+        padding:0;
+    }
+    .about-image img{
+        width: 100%;
+        height:auto;
+    }
+    .h1-1{
+        margin:0;
+        margin-top:80vw;
+    }
+    .section{
+        width: auto;
+        height: auto;
+    }
+    nav{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .nav2 ul{
+        padding:0;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .social-content img{
+        width: 20%;
+        height: 20%;
+    }
+    .nav1 img{
+        margin: 0;
+        width: 10vw;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .footer2 img{
+        width: 60%;
+        margin-left: 15em;
+    }
+    .social-content img{
+        border-radius: 50em;
+        width: 11vw;
+        height: 22vh;
+        margin: 0.5em;
+        margin-bottom: 5em;
+        flex-direction: column;
+    }
+}
+@media (max-width:700px){
+    .nav1 img{
+        width: 20%;
+    }
+    .footer2 img{
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+@media (max-width:400px){
+    .h1{
+        text-align: center;
+        margin-left:1em;
+    }
+}
+@media (max-width:335px){
+    .h1{
+        text-align: center;
+        margin:0.25em;
+    }
+    .section-content img{
+        margin-left:0;
+        margin-right:0;
+    }
 }

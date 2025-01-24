@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="adventure travel club.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="header">
+          <h1>Adventure Travel Club</h1>
+          <h4>Begin your journey with fellow adventures</h4>
+        </div>
+        <div class="section-1">
+          <h3>Personal Information</h3>
+          <hr />
+          <div class="flex-1">
+            <div>
+              <label for="fname">First Name</label>
+              <br />
+              <input type="text" id="fname" name="fname" required />
+            </div>
+            <div>
+              <label for="lname">Last Name</label>
+              <br/>
+              <input type="text" id="lname" name="lname" required />
+            </div>
+          </div>
+          <br />
+          <label for="email">Email Adress</label>
+          <br />
+          <input type="email" id="email" name="email" required />
+          <br />
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday" required />
+        </div>
+
+        <div class="section-2">
+          <h3>Adventure Preferences</h3>
+          <hr />
+
+          <label for="level">Expirence Level</label>
+          <br />
+          <select id="level" name="level" required>
+            <option value="">Select your Expirence Level</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+
+          <br />
+
+          <label>Perferred Activities</label>
+          <br />
+          <input type="checkbox" id="act" name="Activities" value="act" />
+          <label for="act">Hiking</label>
+          <br>
+          <input type="checkbox" id="act" name="Activities" value="act" />
+          <label for="act">Rock Climbing</label>
+          <br>
+          <input type="checkbox" id="act" name="Activities" value="act" />
+          <label for="act">Kayaking</label>
+          <br>
+          <input type="checkbox" id="act" name="Activities" value="act" />
+          <label for="act">Scuba Diving</label>
+          <br>
+          <br />
+          <label>Preferred Trip Duration</label>
+          <br />
+          <input type="radio" id="trip-a" name="Trip" required />
+          <label for="trip-a">Weekend Trips (2-3 days)</label>
+          <br>
+          <input type="radio" id="trip-b" name="Trip" required />
+          <label for="trip-b">Week-long Adventures (5-7 days)</label>
+          <br>
+          <input type="radio" id="trip-c" name="Trip" required />
+          <label for="trip-c">Extended Expeditions (2+ weeks)</label>
+        </div>
+        <div class="section-3">
+          <h3>Additional Information</h3>
+          <hr>
+          <label for="fitness">Fitness Level(1-10)</label>
+          <br>
+          <input type="range" id="fitness" name="fitness" min="1" max="10">
+          <br>
+          <label for="message">Tell us about yourself</label>
+          <br />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            placeholder="Share your adventure expirences and what excites about joining our club..."
+          ></textarea>
+
+          <label for="photo">Profile Photo</label>
+          <input class="photo" type="file" id="photo" name="photo" accept=".pdf,.jpg,.gif" />
+        </div>
+        <div class="section-4">
+          <input
+          type="checkbox"
+          id="confirm"
+          name="confrim"
+          value="term"
+          required
+          />
+          <label>I agree to the Terms and Conditions and Privacy Policy </label>
+        </div>
+          <button type="submit">Submit Registration</button>
+      </form>
+    </div>
+  </body>
+</html>

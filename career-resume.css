@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: black;
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+}
+.article1{
+    background-image: url(giphy\ \(1\).gif);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    height: 75vh;
+}
+header{
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+
+}
+.nav1{
+    display: flex;
+    font-size: 1.5em;
+}
+.nav1 img{
+    width: 14vw;
+    border-radius: 50em;
+    margin:0.75em;
+    margin-left:1em;
+    height: 25vh;
+    opacity: 20%;
+}
+.nav1 h2{
+    margin-top:1em;
+}
+.nav2 ul{
+    display: flex;
+    list-style-type: none;
+    padding:1em;
+}
+.nav2 li{
+    margin:0.5em;
+    margin-top:1em;
+    font-size: 1.25em;
+}
+.nav2 a{
+    color: white;
+    text-decoration: none;
+}
+.nav2 a:hover{
+    color:rgb(12, 0, 88);
+    background-color:rgb(149, 199, 255);
+    text-decoration: underline royalblue;
+    padding: 0.25em;
+    border-radius: 10em;
+}
+.resume{
+    border-radius: 10px;
+    border: solid white 1px;
+    margin: 0 auto;
+    display: flex;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin: 15px;
+    font-size: 5em;
+}
+footer{
+    border-top: royalblue 1em solid;
+    border-radius: 1em;
+    display: flex;
+    color:white;
+    margin:1.5em;
+}
+.footer2 img{
+    width:35vw;
+    margin-top:1.5em;
+    border-radius:8em;
+    height:100vh;
+}
+.footer1{
+    display: flex;
+    font-size: larger;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footer-links{
+    margin:3em;
+    margin-top: 3em;
+}
+.footer1 h2{
+    font-size: 2em;
+}
+.footer1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+.footer1 a:hover{
+    color:rgb(12, 0, 88);
+    background-color:rgb(149, 199, 255);
+    text-decoration: underline royalblue;
+    padding: 0.25em;
+    border-radius: 10em;
+}
+.footer1 ul{
+    list-style-type: none;
+}
+.social h2{
+    margin-top: 0.5em;
+    text-align: center;
+    font-size: 4.5em;
+}
+.social{
+    text-align: center;
+}
+.social img{
+    border-radius: 50em;
+    width: 11vw;
+    height: 22vh;
+    margin: 0.5em;
+    margin-bottom: 3em;
+}
