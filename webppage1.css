@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 1em;
     
 }
 body{
@@ -9,7 +10,7 @@ body{
     font-optical-sizing: auto;
 }
 .article1{
-    background-image: url(1.gif);
+    background-image: url(home.png);
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
@@ -26,17 +27,18 @@ nav{
 }
 .nav1{
     display: flex;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 .nav1 img{
-    width: 14vw;
-    border-radius: 50em;
-    margin:0.75em;
-    margin-left:1em;
-    height: 25vh;
+    width: 10vw;
+    border-radius:100px;
+    margin:0.5em;
+    /* margin:0.75em;
+    margin-left:1em; */
+    height: 20vh;
     opacity: 20%;
 }
-.nav1 h2{
+.nav1 h1{
     margin-top:1em;
 }
 .nav2 ul{
@@ -46,81 +48,136 @@ nav{
 }
 .nav2 li{
     margin:0.5em;
-    margin-top:1em;
-    font-size: 1.25em;
+    margin-top:2.5em;
+    font-size: 1em;
 }
 .nav2 a{
     color: white;
     text-decoration: none;
 }
 .nav2 a:hover{
-    color:rgb(12, 0, 88);
-    background-color:rgb(149, 199, 255);
-    text-decoration: underline royalblue;
+    color:darkgrey;
+    background-color:black;
+    border:2px solid darkgrey;
     padding: 0.25em;
     border-radius: 10em;
+    transition: 0.3s ease-in;
+    cursor:grab;
 }
 .section{
-    margin:-8em auto 0;
+    margin:-2em auto 0;
     background-color: white;
     text-align: center;
-    width:45em;
-    height:18em;
+    max-width:400px;
+    max-height:300px;
     border-radius: 1em;
-    font-size: large;
-}
-.section h1{
-    padding-top:1em;
-    margin: 0.5em;
-}
-.section p{
-    padding:3em;
+    font-size: 1.1em;
+    padding:1em;
     font-style: italic;
+}
+
+.section h1{
+    font-size: 1.5em;
+}
+/* .section p{
+    font-style: italic;
+} */
+
+.container{
+    background-image: linear-gradient(to bottom , rgb(0, 0, 0), rgb(26, 26, 26), rgb(36, 36, 36), rgb(26, 26, 26), black);
+    margin:1em;
 }
 .h1{
     color:white;
     text-align: center;
-    margin: 1em;
-    margin-top: 4em;
-    font-size: 5em;
+    font-family: "Dancing Script", cursive;
+    font-size: 10em;
 }
-.section2{
+.music{
+    margin:4em;
+    text-align: center;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    max-width:500px;
+    justify-self:center;
+    padding-right:1em;
+    border-radius: 50px;
+    max-height: 240px;
+    background-image: linear-gradient(to right , #545353 , #4a5453, #55606b, #4a5453, #545353);
+    box-shadow: 5px 5px 5px #808f99;
+    border:solid #2e3844 2px;
+}
+.music img{
+    width:250px;
+    border-radius: 1000px;
+    margin-left:-8em;
+}
+.music-container{
+    color:white;
+
+}
+.music-info{
+    color:white;
+    justify-self: center;
+    background-image: linear-gradient(to right , #545353 , #4a5453, #55606b, #4a5453, #545353);
+    max-width:500px;
+    padding:1.2em;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 5px 5px 5px #808f99;
+    border:solid #2e3844 2px;
+    margin-bottom:5em;
+}
+.music-info h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 4em; 
+}
+.music-info img{
+    margin:1em;
+    width:200px;
+    height:200px;
+    box-shadow: 5px 5px 5px #808f99;
+    border:solid #2e3844 2px;
+    border-radius: 20px;
+}
+.home-ideas{
+    display:flex;
     flex-wrap: wrap;
+    justify-content: center;
+    max-width:900px;
 }
-.section-content img{
-    width:20em;
-    height:45em;
-    margin: 0.5em;
-}
-.about{
-    border: 1em solid royalblue;
-    background-color:rgb(149, 199, 255);
-    border-radius: 1em;
-    margin:8vw;
-    padding-top:0.1em;
-    padding-bottom: 0.1em;
+.home-ideas img{
+    width:300px;
+    height:400px;
+    margin:2em;
+    box-shadow: 5px 5px 5px #808f99;
+    border:solid #2e3844 2px;
+    border-radius: 20px;
 }
 .about-content{
-    display:flex;
-    margin: 1em;
-    border: 1em solid white;
-    border-radius: 1em;
-    background-color: black;
+    display: flex;
     color:white;
+    max-width:700px;
+    justify-self: center;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 5px 5px 5px #808f99;
+    border:solid #2e3844 2px;
+    margin:2em;
+    padding:1em;
 }
-.about-image img{
-    width: 44vw;
-    height: 98vh;
+
+.about-image{
+    width:300px;
+    height:400px;
+    border:solid #2e3844 2px;
+    border-radius: 40px;
 }
-.about-item{
-    font-size: larger;
-    margin:3.5em;
+.about-info  h1{
+    font-size: 5em;
+    font-family: "Dancing Script", cursive;
 }
 .h1-1{
-    margin:2em;
+    /* margin:2em; */
     font-size: 5em;
     color:white;
     text-align: center;
@@ -186,19 +243,13 @@ footer{
     margin: 0.5em;
     margin-bottom: 3em;
 }
-@media (max-width:1300px){
+/* @media (max-width:1300px){
     .about-item h2{
         word-wrap: break-word;
     }
     .footer1{
         display:block;
         text-align: center;
-    }
-    .about-content{
-        flex-direction: column;
-        text-align: center;
-        margin:0;
-        padding:0;
     }
     .about-image img{
         width: 100%;
@@ -226,7 +277,6 @@ footer{
         height: 20%;
     }
     .nav1 img{
-        margin: 0;
         width: 10vw;
     }
     footer{
@@ -270,4 +320,4 @@ footer{
         margin-left:0;
         margin-right:0;
     }
-}
+} */
